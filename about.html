@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+         background-color: antiquewhite;
+        }
+          header {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    animation: slideFade 4s ease-out;
+}
+ @keyframes slideFade {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+/* Make nav a flex container and add gap */
+header nav {
+    display: flex;
+    justify-content: end;
+    gap: 50px; /* space between all links */
+    align-items: center; /* vertically center links */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+}
+nav a img {
+    display: inline-block;
+    vertical-align: middle;
+    gap: 10px;
+}
+  footer {
+        padding: 40px;
+      background-color: gray;
+    }  
+    .monkey {
+        display: flex;
+        justify-content: space-between;
+    }
+    .monkey .monkey-11 {
+        gap: 50px;
+    }
+    .container {
+        height: auto;  
+       width: 600px;
+       position: relative;
+       left: 20%;
+       font-family:'Courier New', Courier, monospace;
+    }
+    .item-1 P {
+        position: relative;
+        left: 40%;
+        width: 300px;
+    }
+    .item-1 img {
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+        border-radius: 20px;
+        height: 500px;
+    }
+    .facts-1 {
+        margin: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .facts-2 {
+        position: relative;
+        left: 15%;
+        margin-top: 10px;
+    }
+    </style>
+</head>
+    <header>
+       <a href="https://github.com/samrawit-2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJg6EaoDxB2fOfsNarHEg0PlJ3wnn4Aj5H_Q&s" alt="" width="5%"></a>
+        <nav>
+            <a href="portfolio.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html" target="_blank">Contact</a>
+            <a href="https://www.linkedin.com/in/samrawit-yisak-799028374" target="_blank" > <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAYFBMVEUAAAD///84ODjx8fHU1NTR0dEaGhqdnZ1iYmKjo6MzMzOqqqrY2NhQUFAjIyP8/Pzr6+srKyuHh4fe3t4+Pj7k5OS2trZoaGi8vLxXV1eWlpZ+fn5ISEjFxcV2dnYRERE8NnxSAAAD50lEQVR4nO2c2ZaiMBCGA2EVJCEsArK8/1sOi22jKTTOdJbpk//GCyJ+J5RVRVUS5BgopBsAkoUSlYUSlYUSlYUS1RcUVivyHgoPrHdVqhwH/AaqipB6telLqKHUwIRQXr+AorkWplnFIRS56GJC7ZFdIV8bE0JHDxAxjVD9EZSrEWo6cFcakdChqeuF8iyUhbJQFurvoU6x76UDC8yBmsa7rx1aQ6CCZheUsMSQ/QFU7j+OCU2AGp7GkKt+qCs3CMvK4oWhThU/KtENNQKjsKSXC2GoBhp21gwFDpTkFoShwDdXSUb1f0P50DDdj89IQ4dcgqx6gzBUDryMaXeewFTRk3YoLiDLMvOPoIJHKiIvofosyVMyT5/m6K2/5Z6ENjKz9A9fHKa2a1KvvvYSkX7JK5aFslAW6lhn1oVxHHaMRQIBUxwqO3HaXZ24i9n9WllX300ETKu4nX4KKuQG4V2xPeJ6F/GN9sIFcsdJw5eZmDyordRQDnClvnoVOiVDMQrff1ZzbFxyodgh0ix6aFlSofivPKg4MiyZUHyd5klH/Tt5UF3/qkm96cDaJc7Uwa33quC8TB7U+3ly7s5MGZSQMJhVa4ZywLqpbqjBRCgKFXN1QznQ+gcFUBgXaXW44KfTAIWT21S4HdxDL9RD+bu+UgnW3ahyqObxFtB6EQxkMFKhvKcfnIDsigA9OplQ/O9BNUrAfcqE4jMTqMED/P1kQgFzANi6WigKFLQ73VAecJML70OBBqtEKCjWtjwUkFJJhKqBmwApMlCMlwgFJeAl76nUQkHxH/AJaqGgBbVAM0UtFNTiMhIq43uZFspCWSgLZaEslIWyUBbKQlkoC2WhLJSF+p1QMTeI7KCAuiEI9cMFjih+Vvi9nAWV3NUEWgwRMG7c+C9QCmU8FKkKSsyCol2bBXkbUnOgSJePjZ8OST8lxBQodvK2J4fjpVdhBFTXE4cWRVGRpXNYGwFVuLMldVOW5cshCuEJ6qEqh7ou7ppFlKajix0cyNon8AkUiZYPtvQth2CeqlHmNkcBrbGouCzhlF0oLa7zTDnJhLL3X5WnNbinazhlqCzzdSfDgJC0DYUCKleTqraZar3uvELOMwUujFGkLR8hl3SzKXJe1xteW51ncJS31Iyt/775IfrLnityqpGTvllKK09fK2jTni4zRRzCWuzULkWzD9Vk68k9Gsf97J7omik43uLRF1JJ279eyt2vNGbnr+zZz7rbWUGkjvosUKesbJPHdm7ijkNVFc1lPRfndqoSoamvTh7lEv0qjvq+b5O1y2vO+VPk+wQoc6B2slCislCislCislCiMhLqD1MVWxcaVHpCAAAAAElFTkSuQmCC" width="16%"> </a>
+        </nav>
+</header>
+<h1>About</h1>
+<div class="container">
+<h2>👋 Heyyyy-yo!</h2>
+<p>Samrawit here, a second-year Information Technology student at Mekelle University (MIT). I was born in Adwa, in the heart of Tigray, but I have been studying in Mekelle since high school at Kallamino Special High School. Living away from my parents from a young age has taught me independence and strength. <br>
+I began learning programming in high school, starting with HTML and CSS through my IT teacher. As a child, my dream was to become a doctor, but everything changed when I discovered the world of programming. Learning from my teacher and exploring different online platforms sparked my curiosity and passion for technology. This motivation led me to become a self-taught learner, taking various online courses that helped me grow into a web developer and poster designer. <br>My goal is not only to become a better developer but also to encourage others to start learning. Coding may seem hard at first, but once you take the first step, you realize how creative and exciting it can be.
+</p> </div>
+<div class="item-1">
+<h1>The Diary That Holds My Dreams</h1>
+<img src="./cc4fc3ac-ca9c-4a9c-9147-d035743cc91e.png" alt="">
+<p>My personal diary — where ideas, goals, and reflections come together. Every page holds a step in my learning and creative journey.</p></div>
+<div class="item-1">
+    <h1>My Thoughts in Ink</h1>
+    <img src="./photo_6017016824421534879_y.jpg" alt="">
+    <p>I get annoyed when people say front-end development is easy. If you think CSS is simple, try centering a div! Front-end developers are rare gems who survive broken layouts, weird bugs, and endless browser drama.</p>
+ </div>
+  <H2 class="facts-2">Fun facts about me</H2>
+ <div class="facts-1">
+    <dl>
+       <dt><b>👩🏻‍💻 Coding Environment</b></dt>
+<dd>Music 🎶 + snacks 🍟</dd>
+
+<dt><b>☕ Debugging Partner</b></dt>
+<dd>Coffee (or sometimes tea 😅)</dd>
+
+<dt><b>💡 Favorite Part of Coding</b></dt>
+<dd>When something finally works after 50 tries 😆</dd>
+
+<dt><b>🎨 Creative Hobby</b></dt>
+<dd>Poster design and exploring new color palettes</dd>
+
+<dt><b>🌙 Fun Fact</b></dt>
+<dd>I code best at night — it’s my creative time 🌌</dd>
+
+<dt><b>💻 First Code</b></dt>
+<dd><code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code> — and I was so proud! 😄</dd>
+
+    </dl>
+    <aside>
+     <details>
+        <summary>see my hobbies</summary>
+        <ul>
+            <li>codding</li>
+            <li>watching a movie and podcast</li>
+            <li>reading psych and fiction books</li>
+            <li>hang out with friends</li>
+            <li>mediation</li>
+            <li>spend time with my mom</li>
+        </ul>
+     </details>
+    </aside>
+ </div>
+ <footer>
+    <div class="monkey">
+   <p>&copy; Octamber 2025 Samrawit yisak</p> 
+   
+   <nav class="monkey-11"><a href="portfolio.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html" target="_blank">Contact</a>
+            <a href="https://www.linkedin.com/in/samrawit-yisak-799028374" target="_blank" > <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAYFBMVEUAAAD///84ODjx8fHU1NTR0dEaGhqdnZ1iYmKjo6MzMzOqqqrY2NhQUFAjIyP8/Pzr6+srKyuHh4fe3t4+Pj7k5OS2trZoaGi8vLxXV1eWlpZ+fn5ISEjFxcV2dnYRERE8NnxSAAAD50lEQVR4nO2c2ZaiMBCGA2EVJCEsArK8/1sOi22jKTTOdJbpk//GCyJ+J5RVRVUS5BgopBsAkoUSlYUSlYUSlYUS1RcUVivyHgoPrHdVqhwH/AaqipB6telLqKHUwIRQXr+AorkWplnFIRS56GJC7ZFdIV8bE0JHDxAxjVD9EZSrEWo6cFcakdChqeuF8iyUhbJQFurvoU6x76UDC8yBmsa7rx1aQ6CCZheUsMSQ/QFU7j+OCU2AGp7GkKt+qCs3CMvK4oWhThU/KtENNQKjsKSXC2GoBhp21gwFDpTkFoShwDdXSUb1f0P50DDdj89IQ4dcgqx6gzBUDryMaXeewFTRk3YoLiDLMvOPoIJHKiIvofosyVMyT5/m6K2/5Z6ENjKz9A9fHKa2a1KvvvYSkX7JK5aFslAW6lhn1oVxHHaMRQIBUxwqO3HaXZ24i9n9WllX300ETKu4nX4KKuQG4V2xPeJ6F/GN9sIFcsdJw5eZmDyordRQDnClvnoVOiVDMQrff1ZzbFxyodgh0ix6aFlSofivPKg4MiyZUHyd5klH/Tt5UF3/qkm96cDaJc7Uwa33quC8TB7U+3ly7s5MGZSQMJhVa4ZywLqpbqjBRCgKFXN1QznQ+gcFUBgXaXW44KfTAIWT21S4HdxDL9RD+bu+UgnW3ahyqObxFtB6EQxkMFKhvKcfnIDsigA9OplQ/O9BNUrAfcqE4jMTqMED/P1kQgFzANi6WigKFLQ73VAecJML70OBBqtEKCjWtjwUkFJJhKqBmwApMlCMlwgFJeAl76nUQkHxH/AJaqGgBbVAM0UtFNTiMhIq43uZFspCWSgLZaEslIWyUBbKQlkoC2WhLJSF+p1QMTeI7KCAuiEI9cMFjih+Vvi9nAWV3NUEWgwRMG7c+C9QCmU8FKkKSsyCol2bBXkbUnOgSJePjZ8OST8lxBQodvK2J4fjpVdhBFTXE4cWRVGRpXNYGwFVuLMldVOW5cshCuEJ6qEqh7ou7ppFlKajix0cyNon8AkUiZYPtvQth2CeqlHmNkcBrbGouCzhlF0oLa7zTDnJhLL3X5WnNbinazhlqCzzdSfDgJC0DYUCKleTqraZar3uvELOMwUujFGkLR8hl3SzKXJe1xteW51ncJS31Iyt/775IfrLnityqpGTvllKK09fK2jTni4zRRzCWuzULkWzD9Vk68k9Gsf97J7omik43uLRF1JJ279eyt2vNGbnr+zZz7rbWUGkjvosUKesbJPHdm7ijkNVFc1lPRfndqoSoamvTh7lEv0qjvq+b5O1y2vO+VPk+wQoc6B2slCislCislCislCiMhLqD1MVWxcaVHpCAAAAAElFTkSuQmCC" width="3%"> </a>
+             <a href="https://github.com/samrawit-21"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5m_X26FGAe1sK2gB41TmnHcM4MIqJQ2_P3g&s" width="2.7%"></a>
+        </nav>
+</div>
+
+</footer>
+</body>
+</html>

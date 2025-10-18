@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The platform where i have learned</title>
+    <style>
+        header {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    animation: slideFade 4s ease-out forwards;
+}
+@keyframes slideFade {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Make nav a flex container and add gap */
+header nav {
+    display: flex;
+    justify-content: end;
+    gap: 50px; /* space between all links */
+    align-items: center; /* vertically center links */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+}
+nav a img {
+    display: inline-block;
+    vertical-align: middle;
+    gap: 10px;
+}
+.coat {
+  display: flex;
+  justify-content: space-between; /* ensures space between text and image */
+  align-items: center;            /* vertically centers them */
+  margin: 30px auto;
+  height: auto;                   /* let it grow with content */
+  width: 80%;                     /* more responsive than 1000px */
+  gap: 40px;                      /* <-- added proper gap */
+  position: relative;
+  left: 0;                        /* remove offset for balance */
+}
+
+.coat-sand {
+  flex: 1;                        /* makes both divs share space */
+}
+
+.coat img {
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;                  /* make image a perfect circle */
+  object-fit: cover;
+}
+.box {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 40px;
+    justify-content: center;
+    
+}
+.box .box-1 img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+}
+.container {
+    text-align: center;
+}
+.wesn {
+   display: inline-block;       /* makes border fit text width */
+  border: 2px solid #333;      /* border color and thickness */
+  padding: 5px 10px;           /* space around text */
+  border-radius: 5px;          /* optional: rounded corners */
+}
+footer {
+        padding: 40px;
+      background-color: gray;
+    }  
+    .monkey {
+        display: flex;
+        justify-content: space-between;
+    }
+    .monkey .monkey-11 {
+        gap: 50px;
+    }
+   
+    </style>
+</head>
+<body>
+    <header>
+       <a href="https://github.com/samrawit-2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJg6EaoDxB2fOfsNarHEg0PlJ3wnn4Aj5H_Q&s" alt="" width="5%"></a>
+        <nav>
+            <a href="portfolio.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.linkedin.com/in/samrawit-yisak-799028374" target="_blank" > <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAYFBMVEUAAAD///84ODjx8fHU1NTR0dEaGhqdnZ1iYmKjo6MzMzOqqqrY2NhQUFAjIyP8/Pzr6+srKyuHh4fe3t4+Pj7k5OS2trZoaGi8vLxXV1eWlpZ+fn5ISEjFxcV2dnYRERE8NnxSAAAD50lEQVR4nO2c2ZaiMBCGA2EVJCEsArK8/1sOi22jKTTOdJbpk//GCyJ+J5RVRVUS5BgopBsAkoUSlYUSlYUSlYUS1RcUVivyHgoPrHdVqhwH/AaqipB6telLqKHUwIRQXr+AorkWplnFIRS56GJC7ZFdIV8bE0JHDxAxjVD9EZSrEWo6cFcakdChqeuF8iyUhbJQFurvoU6x76UDC8yBmsa7rx1aQ6CCZheUsMSQ/QFU7j+OCU2AGp7GkKt+qCs3CMvK4oWhThU/KtENNQKjsKSXC2GoBhp21gwFDpTkFoShwDdXSUb1f0P50DDdj89IQ4dcgqx6gzBUDryMaXeewFTRk3YoLiDLMvOPoIJHKiIvofosyVMyT5/m6K2/5Z6ENjKz9A9fHKa2a1KvvvYSkX7JK5aFslAW6lhn1oVxHHaMRQIBUxwqO3HaXZ24i9n9WllX300ETKu4nX4KKuQG4V2xPeJ6F/GN9sIFcsdJw5eZmDyordRQDnClvnoVOiVDMQrff1ZzbFxyodgh0ix6aFlSofivPKg4MiyZUHyd5klH/Tt5UF3/qkm96cDaJc7Uwa33quC8TB7U+3ly7s5MGZSQMJhVa4ZywLqpbqjBRCgKFXN1QznQ+gcFUBgXaXW44KfTAIWT21S4HdxDL9RD+bu+UgnW3ahyqObxFtB6EQxkMFKhvKcfnIDsigA9OplQ/O9BNUrAfcqE4jMTqMED/P1kQgFzANi6WigKFLQ73VAecJML70OBBqtEKCjWtjwUkFJJhKqBmwApMlCMlwgFJeAl76nUQkHxH/AJaqGgBbVAM0UtFNTiMhIq43uZFspCWSgLZaEslIWyUBbKQlkoC2WhLJSF+p1QMTeI7KCAuiEI9cMFjih+Vvi9nAWV3NUEWgwRMG7c+C9QCmU8FKkKSsyCol2bBXkbUnOgSJePjZ8OST8lxBQodvK2J4fjpVdhBFTXE4cWRVGRpXNYGwFVuLMldVOW5cshCuEJ6qEqh7ou7ppFlKajix0cyNon8AkUiZYPtvQth2CeqlHmNkcBrbGouCzhlF0oLa7zTDnJhLL3X5WnNbinazhlqCzzdSfDgJC0DYUCKleTqraZar3uvELOMwUujFGkLR8hl3SzKXJe1xteW51ncJS31Iyt/775IfrLnityqpGTvllKK09fK2jTni4zRRzCWuzULkWzD9Vk68k9Gsf97J7omik43uLRF1JJ279eyt2vNGbnr+zZz7rbWUGkjvosUKesbJPHdm7ijkNVFc1lPRfndqoSoamvTh7lEv0qjvq+b5O1y2vO+VPk+wQoc6B2slCislCislCislCiMhLqD1MVWxcaVHpCAAAAAElFTkSuQmCC" width="16%"> </a>
+        </nav>
+
+    </header>
+    <p><small>Web Development</small></p>
+    <div class="coat">
+        <div class="coat-sand">
+    
+    <h2>Welcome to my blog</h2>
+    <p>This is where I share everything I’ve learned and discovered throughout my coding and design journey. From small projects to new tools and helpful tips, I write to inspire others who are also learning.When I started learning programming, everything felt confusing. But step by step, it started making sense. I learned that consistency is the key — even spending a few minutes each day makes a big difference. Through platforms like SheCodes, Udacity, and Cisco, I built a strong foundation that helped me grow in confidence.</p>
+        </div>
+        <div class="coat-sand">
+            <img src="./photo_6014671609069161041_x.jpg" alt="">
+        </div>
+    </div>
+    <div class="container">
+    <h2 class="wesn">The Platforms That Built My Programming Foundation</h2></div>
+    <div class="box">
+   <div class="box-1">
+    <h2>SheCode</h2>
+    <img src="data:image/png;base64,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" alt="">
+    <p>SheCodes was the foundation of my coding journey and helped me build a strong understanding of programming basics.
+Through its lessons, I gained valuable skills that improved my confidence in coding.
+Our instructor, Matt Delac, made every topic clear and easy to follow.
+He turned complex concepts into something simple, fun, and truly inspiring to learn.</p>
+   </div>
+   <div class="box-1">
+    <h2>Udacity</h2>
+    <img src="data:image/jpeg;base64,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" alt="">
+    <p>I also took part in Udacity’s programming courses, where I learned the fundamentals of coding and built a strong foundation in basic programming languages. The lessons were clear, engaging, and hands-on — helping me understand how code works behind every digital creation.
+
+Udacity gave me the opportunity to think logically, solve problems creatively, and strengthen my technical skills.</p>
+</div>
+   <div class="box-1"><h2>YouTube</h2>
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS176iu3UoNYBOWADFYu7aUSyC7-T1grcU3dQ&s" alt="">
+  <p>YouTube has also been one of the best learning platforms for me.The videos not only helped me understand coding concepts more clearly but also motivated me to explore more and keep improving my skills.
+
+There are many amazing instructors on YouTube who make learning both fun and effective — one of my favorites is SuperSimpleDev, whose lessons have been incredibly helpful in strengthening my web development foundation.
+like <a href="https://youtube.com/@SuperSimpleDev/join"> SuperSimpleDev on YouTube</a>
+</p>
+</div>
+   <div class="box-1">
+    <h2>CISCO</h2>
+  <img src="data:image/png;base64,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" alt="">
+   <p>Cisco has also been a great part of my learning journey. Through its courses, I gained a solid understanding of JavaScript and how it’s used to make websites interactive and dynamic. The lessons were clear, practical, and helped me build confidence in coding. Overall, Cisco has strengthened my technical foundation and inspired me to keep exploring more advanced web development skills.</p>
+    </div>
+    </div>
+    <footer>
+    <div class="monkey">
+   <p>&copy; Octamber 2025 Samrawit yisak</p> 
+   
+   <nav class="monkey-11"><a href="#home">Home</a>
+            <a href="about.html">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html" target="_blank">Contact</a>
+            <a href="https://www.linkedin.com/in/samrawit-yisak-799028374" target="_blank" > <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAYFBMVEUAAAD///84ODjx8fHU1NTR0dEaGhqdnZ1iYmKjo6MzMzOqqqrY2NhQUFAjIyP8/Pzr6+srKyuHh4fe3t4+Pj7k5OS2trZoaGi8vLxXV1eWlpZ+fn5ISEjFxcV2dnYRERE8NnxSAAAD50lEQVR4nO2c2ZaiMBCGA2EVJCEsArK8/1sOi22jKTTOdJbpk//GCyJ+J5RVRVUS5BgopBsAkoUSlYUSlYUSlYUS1RcUVivyHgoPrHdVqhwH/AaqipB6telLqKHUwIRQXr+AorkWplnFIRS56GJC7ZFdIV8bE0JHDxAxjVD9EZSrEWo6cFcakdChqeuF8iyUhbJQFurvoU6x76UDC8yBmsa7rx1aQ6CCZheUsMSQ/QFU7j+OCU2AGp7GkKt+qCs3CMvK4oWhThU/KtENNQKjsKSXC2GoBhp21gwFDpTkFoShwDdXSUb1f0P50DDdj89IQ4dcgqx6gzBUDryMaXeewFTRk3YoLiDLMvOPoIJHKiIvofosyVMyT5/m6K2/5Z6ENjKz9A9fHKa2a1KvvvYSkX7JK5aFslAW6lhn1oVxHHaMRQIBUxwqO3HaXZ24i9n9WllX300ETKu4nX4KKuQG4V2xPeJ6F/GN9sIFcsdJw5eZmDyordRQDnClvnoVOiVDMQrff1ZzbFxyodgh0ix6aFlSofivPKg4MiyZUHyd5klH/Tt5UF3/qkm96cDaJc7Uwa33quC8TB7U+3ly7s5MGZSQMJhVa4ZywLqpbqjBRCgKFXN1QznQ+gcFUBgXaXW44KfTAIWT21S4HdxDL9RD+bu+UgnW3ahyqObxFtB6EQxkMFKhvKcfnIDsigA9OplQ/O9BNUrAfcqE4jMTqMED/P1kQgFzANi6WigKFLQ73VAecJML70OBBqtEKCjWtjwUkFJJhKqBmwApMlCMlwgFJeAl76nUQkHxH/AJaqGgBbVAM0UtFNTiMhIq43uZFspCWSgLZaEslIWyUBbKQlkoC2WhLJSF+p1QMTeI7KCAuiEI9cMFjih+Vvi9nAWV3NUEWgwRMG7c+C9QCmU8FKkKSsyCol2bBXkbUnOgSJePjZ8OST8lxBQodvK2J4fjpVdhBFTXE4cWRVGRpXNYGwFVuLMldVOW5cshCuEJ6qEqh7ou7ppFlKajix0cyNon8AkUiZYPtvQth2CeqlHmNkcBrbGouCzhlF0oLa7zTDnJhLL3X5WnNbinazhlqCzzdSfDgJC0DYUCKleTqraZar3uvELOMwUujFGkLR8hl3SzKXJe1xteW51ncJS31Iyt/775IfrLnityqpGTvllKK09fK2jTni4zRRzCWuzULkWzD9Vk68k9Gsf97J7omik43uLRF1JJ279eyt2vNGbnr+zZz7rbWUGkjvosUKesbJPHdm7ijkNVFc1lPRfndqoSoamvTh7lEv0qjvq+b5O1y2vO+VPk+wQoc6B2slCislCislCislCiMhLqD1MVWxcaVHpCAAAAAElFTkSuQmCC" width="3%"> </a>
+             <a href="https://github.com/samrawit-21"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5m_X26FGAe1sK2gB41TmnHcM4MIqJQ2_P3g&s" width="2.7%"></a>
+        </nav>
+</div>
+
+</footer>
+</body>
+</html>
